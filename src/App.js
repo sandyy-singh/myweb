@@ -1,12 +1,13 @@
 
 import './App.css';
-
+import LoginPage from "./component/LoginPage";
+import "./style/LoginPage.scss"
 
 function App() {
   return (
-    <div className="App">
-  hello
-    </div>
+<div>
+<LoginPage />
+</div>
   );
 }
 

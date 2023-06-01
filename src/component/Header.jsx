@@ -1,37 +1,16 @@
-import React from 'react';
-import Button from '@mui/material/Button';
+import React from "react";
+import { NavLink } from "react-router-dom";
+
+// import Button from '@mui/material/Button';
 
 const Header = () => {
   return (
-    <div className='Header'>
-    
-    <div className="container">
-      <div className="logo">
-        <Brand />
-      </div>
-      <div className="nav-elements">
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/blog">Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
-      </div>
+    <div className="Header">
+      <NavLink>Home</NavLink>
+      <NavLink>About</NavLink>
+      <NavLink>Contact Us</NavLink>
     </div>
-  
-    </div>
-  )
-}
+  );
+};
 
-export default Header 
+export default Header;
